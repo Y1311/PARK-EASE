@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slot Booking & Availability - Smart Parking</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">SmartParking</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="slot-availability.html" class="active">Slots</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="booking-history.html">History</a></li>
+        <li><a href="login.html" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Slot Availability -->
+  <section class="container">
+    <h2>Check Slot Availability & Book</h2>
+    <div id="slotList" class="history-table"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Smart Parking System | Surat, India</p>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/slot-availability.js"></script>
+  <script>
+    function logout() {
+      localStorage.removeItem('loggedInUser');
+      alert("Logged out successfully!");
+      window.location.href = 'login.html';
+    }
+  </script>
+
+</body>
+</html>

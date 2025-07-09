@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slot Management - Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Slot Management - Admin Panel</h2>
+
+    <!-- Add Slot Form -->
+    <div class="form-container">
+      <h3>Add New Slot</h3>
+      <form id="addSlotForm">
+        <input type="text" id="slotLocation" placeholder="Enter Slot Location (e.g., Vesu, Surat)" required>
+        <button type="submit">Add Slot</button>
+      </form>
+    </div>
+
+    <!-- Slot List -->
+    <h3>Manage Slots</h3>
+    <div id="slotList" class="history-table"></div>
+
+    <p style="text-align:center;"><a href="admin-dashboard.html">Back to Dashboard</a></p>
+  </div>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/slot-management.js"></script>
+
+</body>
+</html>

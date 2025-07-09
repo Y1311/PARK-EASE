@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Parking System - Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h1>Smart Parking</h1>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="vehicle-registration.html">Vehicle Registration</a>
+      <a href="slot-availability.html">Slot Availability</a>
+      <a href="booking-history.html">Booking History</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="offers.html">Offers</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find & Book Parking Easily in Surat</h2>
+      <p>Real-time availability | Instant Booking | Secure Payments</p>
+      <a href="slot-availability.html" class="btn">Find Parking</a>
+      <a href="vehicle-registration.html" class="btn-secondary">Register Vehicle</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose Smart Parking?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Real-Time Slots</h3>
+        <p>Check live parking availability in your area.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Easy Booking</h3>
+        <p>Reserve or cancel your parking slot anytime.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secure Payments</h3>
+        <p>Pay safely using UPI, cards, or wallets.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Offers & Discounts</h3>
+        <p>Enjoy regular deals, cashback, and promo codes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Smart Parking System | Surat, Gujarat</p>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+  <script>
+    function logout() {
+      localStorage.removeItem('loggedInUser');
+      alert("Logged out successfully!");
+      window.location.href = 'login.html';
+    }
+  </script>
+
+</body>
+</html>

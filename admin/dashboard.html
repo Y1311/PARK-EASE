@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard - Smart Parking</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Admin Dashboard - Slot Management</h2>
+
+    <div class="form-container">
+      <h3>Add New Slot</h3>
+      <form id="addSlotForm">
+        <input type="text" id="location" placeholder="Enter Slot Location (e.g., Vesu, Surat)" required>
+        <button type="submit">Add Slot</button>
+      </form>
+    </div>
+
+    <h3>Manage Slots</h3>
+    <div id="slotList" class="history-table"></div>
+
+    <p style="text-align:center;"><a href="index.html">Back to Home</a></p>
+  </div>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+
+</body>
+</html>
